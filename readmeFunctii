@@ -1,0 +1,89 @@
+// Tema 2 PC Girnet Andrei 311
+
+
+*init_board
+
+    Trec prin matrice si initializez cu '.'
+
+
+*add_word
+    
+    In dependenta de directie memorez variabila ce se va modifica
+    Trec prin matrice pentru a adauga cuvintul
+
+
+*task_1
+    
+    Deoarece nu se permite scanf, utilizez fgets
+    Pentru fiecare cuvint apelez add_word
+
+
+*calc_puncte
+    
+    Trec prin cuvint si calculez punctajul corespunzator
+
+
+*task_2
+
+    In dependenta de ce player a pus cuvintul ii calculez punctajul
+
+
+*check_bonus
+
+    Caut bonusurile si daca gasesc unul verific daca e indeplinita conditia
+
+
+*task_3
+
+    Calculez scorul si bonusul
+
+
+*spatiu_liber
+
+    Memorez variabila care se va modifica
+    
+    Daca nu iese din rama jocului si directia exista atunci
+    Vad daca nu exista litere in directia data
+
+    Daca exista litera atunci vezi cealalta directie, analog
+
+    Daca in ambele directii exista obstacole, returneaza -1
+
+
+*f_word
+
+    Trec prin vectorul de stringuri si vad unde as putea sa pun acel cuvint
+    
+    Daca exista sau nu spatiu pentru el si daca nu sa mai utilizat inainte
+    returnez datele importante apoi fac break
+
+
+*task_4
+    Creez jocul si apel f_word, apoi dau add_word si printez
+
+
+*f_word_win
+
+    Procedez analog ca si la *f_word, doar ca nu fac break la prima posibiliate
+
+  
+*task_5
+
+    Calculez scorul fiecarui player si creez tabla de joc
+    
+    Incerc sa gasesc 2 cuvinte cu scor maxim, pentru a ma asigura
+    
+    Daca am gasit un scor care e mai mare max il memorez si tot necesarul
+    
+    Apoi il adaug cu add_word si il afisez
+
+
+*task_6
+
+    Procedez identic ca la task_5, doar ca nu verific de 2 ori in plus, si 
+    caut cuvintul cu scor maxim dupa fiecare iteratie
+
+
+*main
+
+    Apelez functia in dependeta de task
